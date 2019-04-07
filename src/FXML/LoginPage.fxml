@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="LoginP_title_label" layoutX="234.0" layoutY="39.0" prefHeight="70.0" prefWidth="133.0" text="ورود به سامانه" textAlignment="CENTER" AnchorPane.bottomAnchor="291.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="39.0">
+         <font>
+            <Font name="Calibri" size="27.0" />
+         </font>
+         <opaqueInsets>
+            <Insets left="20.0" />
+         </opaqueInsets>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="461.0" layoutY="131.0" prefHeight="135.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <Label text="نوع پروفایل" />
+            <Label text="نام کاربری" />
+            <Label text="رمز عبور" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <TextField layoutX="186.0" layoutY="156.0" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
