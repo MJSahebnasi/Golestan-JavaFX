@@ -35,7 +35,7 @@ public class User {
 
     //---construction
 
-    public User(String userName, String passWord, UserType type) throws RepeatetiveUsernameException {
+    public User(String userName, String passWord, UserType type) {
         for (User u:UsersList.getInstance().getUsersList_vctr()) {
             if(u.getUserName().equals(userName)){
                 throw new RepeatetiveUsernameException();

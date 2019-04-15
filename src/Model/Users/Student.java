@@ -1,10 +1,17 @@
 package Model.Users;
 
 import Model.Book;
+import Model.Exceptions.RepeatetiveUsernameException;
 import Model.Exceptions.TooManyReservedBooksException;
 import Model.Food;
 
 public class Student extends User {
+
+    //---construction
+
+    public Student(String userName, String passWord) {
+        super(userName, passWord, UserType.student);
+    }
 
     //---Food
     private Food[][] foodList = new Food[3][7];

@@ -4,13 +4,16 @@ import Model.Exceptions.RepeatetiveUsernameException;
 
 public class Admin extends User {
 
-    private Admin(String userName, String passWord) throws RepeatetiveUsernameException {
+    private Admin(String userName, String passWord) {
         super(userName, passWord, UserType.admin);
     }
 
-    Admin instance = new Admin("javad" , "123");
+    static Admin instance = new Admin("javad" , "123456");
 
-    public Admin getInstance() {
+    public static Admin getInstance() {
         return instance;
     }
+
+
+
 }

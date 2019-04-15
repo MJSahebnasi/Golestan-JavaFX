@@ -1,5 +1,5 @@
 package Model.Users;
 
 public enum UserType{
-    student , professor , admin
+    professor , student , admin
 }

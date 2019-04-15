@@ -11,9 +11,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPage_cntrl">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="500.0" style="-fx-background-color: #8b8e93;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPage_cntrl">
    <children>
-      <Label fx:id="LoginP_title_label" alignment="CENTER" contentDisplay="CENTER" layoutX="130.0" layoutY="27.0" prefHeight="67.0" prefWidth="241.0" text="ورود به سامانه" textAlignment="CENTER" AnchorPane.bottomAnchor="268.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="27.0">
+      <Label fx:id="LoginPage_title_label" alignment="CENTER" contentDisplay="CENTER" layoutX="130.0" layoutY="27.0" prefHeight="67.0" prefWidth="241.0" text="ورود به سامانه" textAlignment="CENTER" AnchorPane.bottomAnchor="268.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="27.0">
          <font>
             <Font name="Calibri" size="27.0" />
          </font>
@@ -34,14 +34,14 @@
             <Insets bottom="20.0" right="20.0" top="20.0" />
          </padding>
       </VBox>
-      <Button layoutX="159.0" layoutY="292.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="66.0" text="ورود" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="292.0" />
+      <Button layoutX="159.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#LoginPage_enter_button" prefHeight="33.0" prefWidth="66.0" text="ورود" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="292.0" />
       <Button layoutX="263.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#LoginPage_register_button" prefHeight="33.0" prefWidth="66.0" text="ثبت نام" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="292.0" />
       <VBox alignment="BASELINE_RIGHT" layoutX="55.0" layoutY="120.0" prefHeight="160.0" prefWidth="274.0" spacing="18.0" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="100.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
          <children>
-            <ComboBox fx:id="LoginP_title_combo" prefWidth="150.0">
+            <ComboBox fx:id="LoginPage_type_combo" prefWidth="150.0">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
@@ -49,19 +49,19 @@
                   <Insets right="20.0" top="15.0" />
                </VBox.margin>
             </ComboBox>
-            <TextField fx:id="LoginP_title_text">
+            <TextField fx:id="LoginPage_userName_text">
                <VBox.margin>
                   <Insets left="50.0" right="20.0" />
                </VBox.margin>
             </TextField>
-            <PasswordField fx:id="LoginP_title_pass">
+            <PasswordField fx:id="LoginPage_passWord_pass">
                <VBox.margin>
                   <Insets left="50.0" right="20.0" />
                </VBox.margin>
             </PasswordField>
          </children>
       </VBox>
-      <Label layoutX="236.0" layoutY="259.0" prefHeight="33.0" prefWidth="28.0" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="248.0" />
+      <Label fx:id="LoginPage_message_label" alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="259.0" prefHeight="33.0" prefWidth="28.0" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="248.0" />
    </children>
    <opaqueInsets>
       <Insets />
